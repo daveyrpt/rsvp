@@ -1,53 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Invitation</title>
+    <title>Scroll Snapping with Images and Button</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <audio src="asset/background.mp3" autoplay loop></audio>
-    <div class="slideshow-container">
-        <div class="slides fade">
-            <img src="asset/1.jpeg" alt="Image 1">
-        </div>
-        <div class="slides fade">
-            <img src="asset/2.jpeg" alt="Image 2">
-        </div>
-        <div class="slides fade">
-            <img src="asset/3.jpeg" alt="Image 3">
-        </div>
-        <div class="dot-container">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-
-        <div class="text-container">
-            <p>They're Getting Married</p>
-            <h2>Elvin & Rennielyn</h2>
-            <p>When: 3:00 PM,</p>
-            <p>28th of October 2024</p>
-            <p>Suria Sabah, Kota Kinabalu</p>
- <!--            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Elvin+%26+Rennielyn+Wedding&dates=20201128T150000Z/20201128T160000Z&details=They're+Getting+Married%0AWhen%3A+3%3A00+PM%2C+28th+of+November+2020&location=Suria+Sabah%2C+Kota+Kinabalu" target="_blank">
-                Add to Google Calendar
-            </a> -->
-
-        </div>
-
-        <div class="button-group">
-            <button>I’m Coming!</button>
-            <button onclick="window.open('https://maps.app.goo.gl/oydZYGv9bW8fuiwx5', '_blank')">
-                Venue
-                <i class="fa-solid fa-location-dot"></i>
-            </button>
-        </div>
-
-    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+</head>
+
+<body>
+    <div class="container">
+        <section class="section" id="section1">
+            <img src="asset/123.svg" alt="Image 1">
+            <button class="invitation-btn">Accept Invitation</button>
+        </section>
+        <section class="section" id="section2">
+            <img src="asset/test.jpeg" alt="Image 2">
+            <div class="countdown">
+                <div id="timer">
+                    <div class="time-unit">
+                        <div id="days">00</div>
+                        <div class="label">Days</div>
+                    </div>
+                    <div class="time-unit">
+                        <div id="hours">00</div>
+                        <div class="label">Hours</div>
+                    </div>
+                    <div class="time-unit">
+                        <div id="minutes">00</div>
+                        <div class="label">Minutes</div>
+                    </div>
+                    <div class="time-unit">
+                        <div id="seconds">00</div>
+                        <div class="label">Seconds</div>
+                    </div>
+                </div>
+                <p>Time Remaining</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Icon stack at the bottom-right -->
+    <div class="icon-stack">
+        <button class="icon-btn" id="whatsapp"><i class="fab fa-whatsapp"></i></button>
+        <button class="icon-btn" id="location"><i class="fas fa-map-marker-alt"></i></button>
+        <button class="icon-btn" id="indicator">
+            <i class="fas fa-arrow-down" id="indicator-icon"></i>
+        </button>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
