@@ -1,53 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Invitation</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <audio src="asset/background.mp3" autoplay loop></audio>
-    <div class="slideshow-container">
-        <div class="slides fade">
-            <img src="asset/1.jpeg" alt="Image 1">
-        </div>
-        <div class="slides fade">
-            <img src="asset/2.jpeg" alt="Image 2">
-        </div>
-        <div class="slides fade">
-            <img src="asset/3.jpeg" alt="Image 3">
-        </div>
-        <div class="dot-container">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
+    <div class="container">
 
-        <div class="text-container">
-            <p>They're Getting Married</p>
-            <h2>Elvin & Rennielyn</h2>
-            <p>When: 3:00 PM,</p>
-            <p>28th of October 2024</p>
-            <p>Suria Sabah, Kota Kinabalu</p>
- <!--            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Elvin+%26+Rennielyn+Wedding&dates=20201128T150000Z/20201128T160000Z&details=They're+Getting+Married%0AWhen%3A+3%3A00+PM%2C+28th+of+November+2020&location=Suria+Sabah%2C+Kota+Kinabalu" target="_blank">
-                Add to Google Calendar
-            </a> -->
+        <section class="section">
+            <img src="asset/section-one.jpeg">
+            <div class="invitation-text">
+                <p>You are invited to the wedding celebration of</p><br>
+                <p class="name">Elvin Kevin & Rennielyn</p>
+                <button class="invitation-btn" onclick="goToPage()">Accept Invitation</button>
+                <p>26 October 20224, 6pm</p><br>
+                <p>Ballroom, Hotel 7 Suria, Kota Kinabalu</p><br>
+            </div>
+        </section>
 
+        <section class="section" id="section2" style="display: flex; flex-direction: column;">
+            <div class="top-image">
+                <img src="asset/section-two-upper.jpg" alt="Top Image">
+            </div>
+            <div class="bottom-image">
+                <img src="asset/section-two-bottom.jpg" alt="Bottom Image">
+            </di>
+        </section>
+
+        <section class="section">
+            <img src="asset/gallery/_V6A1789.jpg">
+        </section>
+
+        <section class="section">
+            <img src="asset/gallery/_V6A1806.jpg">
+        </section>
+
+        <section class="section">
+            <img src="asset/gallery/_V6A1848.jpg">
+        </section>
+
+        <section class="section">
+            <img src="asset/gallery/_V6A1885.jpg">
+        </section>
+
+        <section class="section">
+            <img src="asset/gallery/_V6A1891.jpg">
+        </section>
+
+        <section class="section">
+            <img src="asset/gallery/_V6A1954.jpg" style="object-position: 25% 20%;">
+        </section>
+
+        <section class="section">
+            <img src="asset/gallery/_V6A1959.jpg">
+        </section>
+    </div>
+
+    <!-- Icon stack at the bottom-right -->
+    <div class="icon-stack">
+        <a class="icon-btn" id="whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <a class="icon-btn" id="location"><i class="fas fa-map-marker-alt"></i></a>
+        <a class="icon-btn" id="indicator"><i class="fas fa-arrow-down" id="indicator-icon"></i></a>
+    </div>
+
+    <div class="countdown">
+        <div id="timer">
+            <div class="time-unit">
+                <div id="days">00</div>
+                <div class="label">Days</div>
+       
+                <div id="hours">00</div>
+                <div class="label">Hr</div>
+          
+                <div id="minutes">00</div>
+                <div class="label">Min</div>
+     
+                <div id="seconds">00</div>
+                <div class="label">Sec</div>
+            </div>
         </div>
-
-        <div class="button-group">
-            <button>I’m Coming!</button>
-            <button onclick="window.open('https://maps.app.goo.gl/oydZYGv9bW8fuiwx5', '_blank')">
-                Venue
-                <i class="fa-solid fa-location-dot"></i>
-            </button>
-        </div>
-
     </div>
     
     <script src="script.js"></script>
 </body>
+
 </html>
