@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/themysion');
+@import url('https://fonts.cdnfonts.com/css/tex-gyre-pagella');
 * {
     margin: 0;
     padding: 0;
@@ -36,7 +38,7 @@ body {
 
 .top-image img {
     width: 100%;
-    height: auto;
+
     object-fit: cover;
     object-position: 80% 200px;
 }
@@ -70,12 +72,15 @@ body {
 
 .invitation-text>p {
     width: 90vw;
+    font-family: 'TeXGyrePagella', sans-serif;
+    line-height: 0.8;
 }
 
 .invitation-text>.name {
-    font-family: "Playwrite CU", cursive;
+    font-family: 'Themysion', sans-serif;
     font-style: italic;
-    font-size: 32px;
+    font-size: 60px;
+    line-height: 1.1;
     color: #745823;
     width: 80%;
     /* Adjust width as needed */
@@ -195,6 +200,7 @@ body {
     font-size: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
 }
 
 .icon-btn:hover {
